@@ -4,6 +4,65 @@
   font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
+html {
+  background: #292f6d;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+  background: linear-gradient(#159eaa, #292f6d);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: impact;
+}
+
+.jumbotron {
+  background-color: rgba(37, 51, 180, 0.151);
+  color: rgb(233, 238, 255);
+  font-family: 'Fascinate', cursive;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 70px;
+  text-shadow: -1px 1px rgb(137, 146, 177), -2px 2px rgb(137, 146, 177), -3px 3px rgb(137, 146, 177), -4px 4px rgb(137, 146, 177);
+}
+
+h2,p {
+  color: rgb(233, 238, 255);
+  text-shadow: -1px 1px rgb(137, 146, 177), -2px 2px rgb(137, 146, 177);
+}
+
+#ageSubmit {
+  margin: 5px;
+  background: rgba(35, 11, 124, 0.815);
+  color: rgb(233, 255, 238);
+  border: inset 5px rgba(80, 39, 156, 0.863);
+  border-radius: 10px;
+  box-shadow: 0 3px rgb(80, 87, 150);
+}
+
+#ageSubmit:hover {
+  background: rgba(139, 43, 46, 0.829);
+}
+
+#ageSubmit:active {
+  background: rgba(35, 11, 124, 0.815);
+  box-shadow: 0 1px rgb(80, 87, 150);
+  transform: translateY(2px);
+}
+
 .return {
   display: none;
+}
+
+table th,td {
+  color:rgb(233, 238, 255);
+}
+
+table th {
+  text-shadow: -.8px .8px rgb(137, 146, 177);
 }
