@@ -14,37 +14,37 @@ export default class BaseLife extends BaseAge {
     return round;
   }
   earthRemain() {
-  	if ((this.earthExpect - this.earthAge)>0){
-    	let remain = parseFloat(Number(this.earthExpect - this.earthAge).toFixed(1));
+    if ((this.earthExpect - this.earthAge)>0){
+      let remain = parseFloat(Number(this.earthExpect - this.earthAge).toFixed(1));
       return remain;
-  	} else {
-    	return "N/A";
-  	}
-	}
+    } else {
+      return "N/A";
+    }
+  }
   mercuryRemain() {
-  	if ((this.mercuryExpect - this.mercuryAge)>0){
-    	let remain = parseFloat(Number(this.mercuryExpect - this.mercuryAge).toFixed(1));
+    if ((this.mercuryExpect - this.mercuryAge)>0){
+      let remain = parseFloat(Number(this.mercuryExpect - this.mercuryAge).toFixed(1));
       return remain;
-  	} else {
-    	return "N/A";
-  	}
-	}
+    } else {
+      return "N/A";
+    }
+  }
   marsRemain() {
-  	if ((this.marsExpect - this.marsAge)>0){
-    	let remain = parseFloat(Number(this.marsExpect - this.marsAge).toFixed(1));
+    if ((this.marsExpect - this.marsAge)>0){
+      let remain = parseFloat(Number(this.marsExpect - this.marsAge).toFixed(1));
       return remain;
-  	} else {
-    	return "N/A";
-  	}
-	}
+    } else {
+      return "N/A";
+    }
+  }
   jupiterRemain() {
-  	if ((this.jupiterExpect - this.jupiterAge)>0){
-    	let remain = parseFloat(Number(this.jupiterExpect - this.jupiterAge).toFixed(1));
+    if ((this.jupiterExpect - this.jupiterAge)>0){
+      let remain = parseFloat(Number(this.jupiterExpect - this.jupiterAge).toFixed(1));
       return remain;
-  	} else {
-    	return "N/A";
-  	}
-	}
+    } else {
+      return "N/A";
+    }
+  }
   earthOver() {
     if ((this.earthExpect - this.earthAge)>0){
       return "N/A";
