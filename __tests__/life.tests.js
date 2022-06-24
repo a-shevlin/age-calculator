@@ -51,6 +51,6 @@ describe ('BaseLife', () => {
 
   test('should return N/A or years over life expectancy', () => {
     expect(user.earthOver()).toEqual('N/A');
-    expect(user2.earthOver()).toEqual(27.4);
+    expect(user2.earthOver()).toEqual(127.4);
   });
 });

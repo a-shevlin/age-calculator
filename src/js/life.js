@@ -42,6 +42,11 @@ export default class BaseLife extends BaseAge {
   	}
 	}
   earthOver() {
-    
+    if ((this.earthExpect - this.earthAge)>0){
+      return "N/A";
+    } else {
+      let over = parseFloat(Number(this.earthAge - this.earthExpect).toFixed(1));
+      return over;
+    }
   }
 }
