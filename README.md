@@ -1,18 +1,19 @@
-# (Application Name)
+# _Space Age Calculator_
 
-#### (Brief Description of Application)
+#### _A webpage to allow users to receive their age for provided planets._
 
-#### By (Your Name Here)
+#### By _**Alex Shevlin**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS/Bootstrap
+* Javascript/Jquery
+* Node.js/Jest/Babel/Lint
 
 ## Description
 
+  _This webpage allows the user to input their name and current age. Upon receiving the data it will display a table with calculated ages, remaining lifespans, and tells them if they have lived past the expected lifespan!_
 ## Setup/Installation Requirements
 
 * _clone repo to pc_
@@ -23,9 +24,10 @@
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* N/A
 
 ## License
 
-## Contact Information
+[MIT](/LICENSE)
+
+Copyright (c) _2022_ _Alex Shevlin_
