@@ -12,6 +12,7 @@ $(document).ready(function() {
     let newUser = new BaseLife(name, age);
 
     $('.return').slideDown();
+    $('.entry').slideUp();
     $('.nameReturn').text(newUser.name);
 
     $('#earthAge').text(newUser.earthAge);
@@ -39,4 +40,9 @@ $(document).ready(function() {
     $('#jupiterYrsRem').text(newUser.jupiterRemain());
     $('#jupiterYrsOvr').text(newUser.jupiterOver());
   });
+  $('#retry').click(function(event) {
+    event.preventDefault();
+    $('.return').slideUp();
+    $('.entry').slideDown();
+  })
 });

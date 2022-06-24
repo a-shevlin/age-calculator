@@ -46,12 +46,12 @@ h2,p {
 }
 
 #ageSubmit:hover {
-  background: rgba(139, 43, 46, 0.829);
+  background: rgba(80, 43, 139, 0.829);
 }
 
 #ageSubmit:active {
-  background: rgba(35, 11, 124, 0.815);
-  box-shadow: 0 1px rgb(80, 87, 150);
+  background: rgba(80, 43, 139, 0.829);
+  box-shadow: 0 1.5px rgb(75, 81, 139);
   transform: translateY(2px);
 }
 
@@ -59,10 +59,34 @@ h2,p {
   display: none;
 }
 
+table {
+  background: linear-gradient(#5b15aa9a, #292f6d80);
+}
+
 table th,td {
   color:rgb(233, 238, 255);
 }
 
 table th {
+  background-color: rgba(30, 32, 49, 0.514);
   text-shadow: -.8px .8px rgb(137, 146, 177);
+}
+
+#retry {
+  margin: 5px;
+  background: rgba(35, 11, 124, 0.815);
+  color: rgb(233, 255, 238);
+  border: inset 5px rgba(80, 39, 156, 0.863);
+  border-radius: 10px;
+  box-shadow: 0 3px rgb(80, 87, 150);
+}
+
+#retry:hover {
+  background: rgba(80, 43, 139, 0.829);
+}
+
+#retry:active {
+  background: rgba(80, 43, 139, 0.829);
+  box-shadow: 0 1.5px rgb(75, 81, 139);
+  transform: translateY(2px);
 }
