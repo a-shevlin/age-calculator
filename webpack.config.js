@@ -13,8 +13,9 @@ module.exports = {
     contentBase: './dist'      
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
