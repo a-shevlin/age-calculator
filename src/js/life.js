@@ -16,4 +16,11 @@ export default class BaseLife extends BaseAge {
     	return "N/A";
   	}
 	}
+  mercuryRemain() {
+  	if ((this.mercuryExpect - this.mercuryAge)>0){
+    	return this.mercuryExpect - this.mercuryAge;
+  	} else {
+    	return "N/A";
+  	}
+	}
 }
