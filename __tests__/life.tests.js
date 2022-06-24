@@ -2,8 +2,10 @@ import BaseLife from "../src/js/life";
 
 describe ('BaseLife', () => {
   let user;
+  let user2;
   beforeEach(() => {
   user = new BaseLife('Alex', 22);
+  user2 = new BaseLife('Old Man', 200);
   });
   
   test('should return life expectancy for earth', () => {
@@ -24,5 +26,8 @@ describe ('BaseLife', () => {
 
   test('should return remaining life expectancy for earth', () => {
     expect(user.earthRemain()).toEqual(50.599999999999994)
+  })
+  test('should return N/A if earthAge is higher than earthExpect', () => {
+    expect(user2.earthRemain()).toEqual("N/A")
   })
 });

@@ -9,4 +9,11 @@ export default class BaseLife extends BaseAge {
     this.marsExpect = (this.earthExpect / 1.88);
     this.jupiterExpect = (this.earthExpect / 11.86);
   }
+  earthRemain() {
+  	if ((this.earthExpect - this.earthAge)>0){
+    	return this.earthExpect - this.earthAge;
+  	} else {
+    	return "N/A";
+  	}
+	}
 }
