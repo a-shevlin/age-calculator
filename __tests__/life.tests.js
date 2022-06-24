@@ -53,4 +53,20 @@ describe ('BaseLife', () => {
     expect(user.earthOver()).toEqual('N/A');
     expect(user2.earthOver()).toEqual(127.4);
   });
+  test('should return N/A or years over life expectancy for mercury', () => {
+    expect(user.mercuryOver()).toEqual('N/A');
+    expect(user2.mercuryOver()).toEqual(530.8);
+  });
+  test('should return N/A or years over life expectancy for venus', () => {
+    expect(user.venusOver()).toEqual('N/A');
+    expect(user2.venusOver()).toEqual(205.5);
+  });
+  test('should return N/A or years over life expectancy for mars', () => {
+    expect(user.marsOver()).toEqual('N/A');
+    expect(user2.marsOver()).toEqual(67.8);
+  });
+  test('should return N/A or years over life expectancy for jupiter', () => {
+    expect(user.jupiterOver()).toEqual('N/A');
+    expect(user2.jupiterOver()).toEqual(10.8);
+  });
 });
