@@ -1,9 +1,9 @@
-import UserLife from "../src/js/life";
+import BaseLife from "../src/js/life";
 
-describe ('UserLife', () => {
+describe ('BaseLife', () => {
   let user;
   beforeEach(() => {
-  user = new UserLife('Alex', 22);
+  user = new BaseLife('Alex', 22);
   });
   
   test('should return life expectancy for earth', () => {
