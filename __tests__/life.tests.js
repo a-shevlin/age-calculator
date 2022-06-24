@@ -13,6 +13,6 @@ describe ('UserLife', () => {
     expect(user.mercuryExpect).toEqual(302.5);
   });
   test('should return life expectancy for venus', () => {
-    expect(user.mercuryExpect).toEqual(302.5);
+    expect(user.venusExpect).toEqual(117.09677419354838);
   });
 });
