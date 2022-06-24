@@ -10,6 +10,6 @@ describe ('UserLife', () => {
     expect(user.earthExpect).toEqual(72.6);
   });
   test('should return life expectancy for mars', () => {
-    expect(user.marsExpect).toEqual(72.6);
+    expect(user.mercuryExpect).toEqual(302.5);
   });
 });
