@@ -4,10 +4,14 @@ export default class BaseLife extends BaseAge {
   constructor(name, earth) {
     super(name, earth);
     this.earthExpect = 72.6;
-    this.mercuryExpect = parseFloat(Number(this.earthExpect / 0.24).toFixed(1));
-    this.venusExpect = parseFloat(Number(this.earthExpect / 0.62).toFixed(1));
-    this.marsExpect = parseFloat(Number(this.earthExpect / 1.88).toFixed(1));
-    this.jupiterExpect = parseFloat(Number(this.earthExpect / 11.86).toFixed(1));
+    this.mercuryExpect = this.roundNumberDivide(this.earthExpect, 0.24);
+    this.venusExpect = this.roundNumberDivide(this.earthExpect, 0.62);
+    this.marsExpect = this.roundNumberDivide(this.earthExpect, 1.88);
+    this.jupiterExpect = this.roundNumberDivide(this.earthExpect, 11.86);
+  }
+  roundNumberDivide(number1, number2) {
+    let round = parseFloat(Number(number1 / number2).toFixed(1));
+    return round;
   }
   earthRemain() {
   	if ((this.earthExpect - this.earthAge)>0){
