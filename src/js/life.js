@@ -4,14 +4,14 @@ export default class BaseLife extends BaseAge {
   constructor(name, earth) {
     super(name, earth);
     this.earthExpect = 72.6;
-    this.mercuryExpect = (this.earthExpect / 0.24);
-    this.venusExpect = (this.earthExpect / 0.62);
-    this.marsExpect = (this.earthExpect / 1.88);
-    this.jupiterExpect = (this.earthExpect / 11.86);
+    this.mercuryExpect = parseFloat(Number(this.earthExpect / 0.24).toFixed(1));
+    this.venusExpect = parseFloat(Number(this.earthExpect / 0.62).toFixed(1));
+    this.marsExpect = parseFloat(Number(this.earthExpect / 1.88).toFixed(1));
+    this.jupiterExpect = parseFloat(Number(this.earthExpect / 11.86).toFixed(1));
   }
   earthRemain() {
   	if ((this.earthExpect - this.earthAge)>0){
-    	return this.earthExpect - this.earthAge;
+    	this.earthExpect - this.earthAge;
   	} else {
     	return "N/A";
   	}

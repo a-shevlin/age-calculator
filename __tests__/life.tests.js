@@ -11,17 +11,17 @@ describe ('BaseLife', () => {
   test('should return life expectancy for earth', () => {
     expect(user.earthExpect).toEqual(72.6);
   });
-  test('should return life expectancy for mercury', () => {
+  test('should return life expectancy for mercury rounded to the tenths place', () => {
     expect(user.mercuryExpect).toEqual(302.5);
   });
-  test('should return life expectancy for venus', () => {
-    expect(user.venusExpect).toEqual(117.09677419354838);
+  test('should return life expectancy for venus rounded to the tenths place', () => {
+    expect(user.venusExpect).toEqual(117.1);
   });
-  test('should return life expectancy for mars', () => {
-    expect(user.marsExpect).toEqual(38.61702127659574);
+  test('should return life expectancy for mars rounded to the tenths place', () => {
+    expect(user.marsExpect).toEqual(38.6);
   });
-  test('should return life expectancy for jupiter', () => {
-    expect(user.jupiterExpect).toEqual(6.12141652613828);
+  test('should return life expectancy for jupiter rounded to the tenths place', () => {
+    expect(user.jupiterExpect).toEqual(6.1);
   });
 
   test('should return remaining life expectancy for earth', () => {
