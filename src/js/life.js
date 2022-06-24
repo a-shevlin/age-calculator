@@ -23,4 +23,18 @@ export default class BaseLife extends BaseAge {
     	return "N/A";
   	}
 	}
+  marsRemain() {
+  	if ((this.marsExpect - this.marsAge)>0){
+    	return this.marsExpect - this.marsAge;
+  	} else {
+    	return "N/A";
+  	}
+	}
+    jupiterRemain() {
+  	if ((this.jupiterExpect - this.jupiterAge)>0){
+    	return this.jupiterExpect - this.jupiterAge;
+  	} else {
+    	return "N/A";
+  	}
+	}
 }
