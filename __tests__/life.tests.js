@@ -21,4 +21,8 @@ describe ('BaseLife', () => {
   test('should return life expectancy for jupiter', () => {
     expect(user.jupiterExpect).toEqual(6.12141652613828);
   });
+
+  test('should return remaining life expectancy for earth', () => {
+    expect(user.earthRemain()).toEqual(50.599999999999994)
+  })
 });
