@@ -37,6 +37,14 @@ export default class BaseLife extends BaseAge {
       return "N/A";
     }
   }
+  venusRemain() {
+    if ((this.venusExpect - this.venusAge)>0){
+      let remain = parseFloat(Number(this.venusExpect - this.venusAge).toFixed(1));
+      return remain;
+    } else {
+      return "N/A";
+    }
+  }
   jupiterRemain() {
     if ((this.jupiterExpect - this.jupiterAge)>0){
       let remain = parseFloat(Number(this.jupiterExpect - this.jupiterAge).toFixed(1));

@@ -42,6 +42,12 @@ describe ('BaseLife', () => {
   test('should return N/A if marsAge is higher than marsExpect', () => {
     expect(user2.marsRemain()).toEqual("N/A");
   });
+  test('should return remaining life expectancy for venus', () => {
+    expect(user.venusRemain()).toEqual(81.6);
+  });
+  test('should return N/A if venusAge is higher than venusExpect', () => {
+    expect(user2.venusRemain()).toEqual("N/A");
+  });
   test('should return remaining life expectancy for jupiter', () => {
     expect(user.jupiterRemain()).toEqual(4.2);
   });

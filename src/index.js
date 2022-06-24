@@ -15,13 +15,28 @@ $(document).ready(function() {
     $('.nameReturn').text(newUser.name);
 
     $('#earthAge').text(newUser.earthAge);
-    $('#earthLiveExp').text(newUser.earthExpect);
+    $('#earthLifeExp').text(newUser.earthExpect);
     $('#earthYrsRem').text(newUser.earthRemain());
     $('#earthYrsOvr').text(newUser.earthOver());
 
-    $('#earthAge').text(newUser.earthAge);
-    $('#earthLiveExp').text(newUser.earthExpect);
-    $('#earthYrsRem').text(newUser.earthRemain());
-    $('#earthYrsOvr').text(newUser.earthOver());
+    $('#mercuryAge').text(newUser.mercuryAge);
+    $('#mercuryLifeExp').text(newUser.mercuryExpect);
+    $('#mercuryYrsRem').text(newUser.mercuryRemain());
+    $('#mercuryYrsOvr').text(newUser.mercuryOver());
+    
+    $('#venusAge').text(newUser.venusAge);
+    $('#venusLifeExp').text(newUser.venusExpect);
+    $('#venusYrsRem').text(newUser.venusRemain());
+    $('#venusYrsOvr').text(newUser.venusOver());
+
+    $('#marsAge').text(newUser.marsAge);
+    $('#marsLifeExp').text(newUser.marsExpect);
+    $('#marsYrsRem').text(newUser.marsRemain());
+    $('#marsYrsOvr').text(newUser.marsOver());
+
+    $('#jupiterAge').text(newUser.jupiterAge);
+    $('#jupiterLifeExp').text(newUser.jupiterExpect);
+    $('#jupiterYrsRem').text(newUser.jupiterRemain());
+    $('#jupiterYrsOvr').text(newUser.jupiterOver());
   });
 });
