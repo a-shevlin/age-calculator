@@ -30,4 +30,10 @@ describe ('BaseLife', () => {
   test('should return N/A if earthAge is higher than earthExpect', () => {
     expect(user2.earthRemain()).toEqual("N/A")
   })
+  test('should return remaining life expectancy for earth', () => {
+    expect(user.mercuryRemain()).toEqual(50.599999999999994)
+  })
+  test('should return N/A if earthAge is higher than earthExpect', () => {
+    expect(user2.mercuryRemain()).toEqual("N/A")
+  })
 });
