@@ -24,15 +24,33 @@
       </form>
     </div>
     <div class="return">
-      <table>
-        <caption><span class="nameReturn"></span></caption>
-        <tr>
-          <th>Planet</th>
-          <th>Age</th>
-          <th>Life Expectancy</th>
-          <th>Years Remaining</th>
-          <th>Years Over Life Expectancy</th>
-        </tr>
+      <table class="table">
+        <thead>
+          <caption><span class="nameReturn"></span>'s Age Chart</caption>
+          <tr>
+            <th>Planet</th>
+            <th>Age</th>
+            <th>Life Expectancy</th>
+            <th>Years Remaining</th>
+            <th>Years Over Life Expectancy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Earth</th>
+            <td><span class="returnTable" id="earthAge"></span></td>
+            <td><span class="returnTable" id="earthLifeExp"></span></td>
+            <td><span class="returnTable" id="earthYrsRem"></span></td>
+            <td><span class="returnTable" id="earthYrsOvr"></span></td>
+          </tr>
+          <tr>
+            <th>Mercury</th>
+            <td><span class="returnTable" id="mercuryAge"></span></td>
+            <td><span class="returnTable" id="mercuryLifeExp"></span></td>
+            <td><span class="returnTable" id="mercuryYrsRem"></span></td>
+            <td><span class="returnTable" id="mercuryYrsOvr"></span></td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
