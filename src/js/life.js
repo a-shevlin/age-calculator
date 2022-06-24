@@ -11,28 +11,32 @@ export default class BaseLife extends BaseAge {
   }
   earthRemain() {
   	if ((this.earthExpect - this.earthAge)>0){
-    	this.earthExpect - this.earthAge;
+    	let remain = parseFloat(Number(this.earthExpect - this.earthAge).toFixed(1));
+      return remain;
   	} else {
     	return "N/A";
   	}
 	}
   mercuryRemain() {
   	if ((this.mercuryExpect - this.mercuryAge)>0){
-    	return this.mercuryExpect - this.mercuryAge;
+    	let remain = parseFloat(Number(this.mercuryExpect - this.mercuryAge).toFixed(1));
+      return remain;
   	} else {
     	return "N/A";
   	}
 	}
   marsRemain() {
   	if ((this.marsExpect - this.marsAge)>0){
-    	return this.marsExpect - this.marsAge;
+    	let remain = parseFloat(Number(this.marsExpect - this.marsAge).toFixed(1));
+      return remain;
   	} else {
     	return "N/A";
   	}
 	}
     jupiterRemain() {
   	if ((this.jupiterExpect - this.jupiterAge)>0){
-    	return this.jupiterExpect - this.jupiterAge;
+    	let remain = parseFloat(Number(this.jupiterExpect - this.jupiterAge).toFixed(1));
+      return remain;
   	} else {
     	return "N/A";
   	}
