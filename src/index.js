@@ -7,8 +7,8 @@ import BaseLife from './js/life.js';
 $(document).ready(function() {
   $('form').submit(function(event) {
     event.preventDefault();
-    const name = $('#name').val();
-    const age = parseInt($('#age').val());
+    const name = $('#nameInput').val();
+    const age = parseInt($('#ageInput').val());
     let newUser = new BaseLife(name, age);
   });
 });
