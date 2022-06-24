@@ -6,5 +6,6 @@ export default class BaseLife extends BaseAge {
     this.earthExpect = 72.6;
     this.mercuryExpect = (this.earthExpect / 0.24);
     this.venusExpect = (this.earthExpect / 0.62);
+    this.marsExpect = (this.earthExpect / 1.88);
   }
 }
