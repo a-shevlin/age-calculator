@@ -33,7 +33,7 @@ export default class BaseLife extends BaseAge {
     	return "N/A";
   	}
 	}
-    jupiterRemain() {
+  jupiterRemain() {
   	if ((this.jupiterExpect - this.jupiterAge)>0){
     	let remain = parseFloat(Number(this.jupiterExpect - this.jupiterAge).toFixed(1));
       return remain;
@@ -41,4 +41,7 @@ export default class BaseLife extends BaseAge {
     	return "N/A";
   	}
 	}
+  earthOver() {
+    
+  }
 }

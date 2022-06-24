@@ -25,27 +25,32 @@ describe ('BaseLife', () => {
   });
 
   test('should return remaining life expectancy for earth', () => {
-    expect(user.earthRemain()).toEqual(50.6)
+    expect(user.earthRemain()).toEqual(50.6);
   });
   test('should return N/A if earthAge is higher than earthExpect', () => {
-    expect(user2.earthRemain()).toEqual("N/A")
-  })
+    expect(user2.earthRemain()).toEqual("N/A");
+  });
   test('should return remaining life expectancy for mercury', () => {
-    expect(user.mercuryRemain()).toEqual(210.8)
+    expect(user.mercuryRemain()).toEqual(210.8);
   });
   test('should return N/A if mercuryAge is higher than mercuryExpect', () => {
-    expect(user2.mercuryRemain()).toEqual("N/A")
-  })
+    expect(user2.mercuryRemain()).toEqual("N/A");
+  });
   test('should return remaining life expectancy for mars', () => {
-    expect(user.marsRemain()).toEqual(26.9)
+    expect(user.marsRemain()).toEqual(26.9);
   });
   test('should return N/A if marsAge is higher than marsExpect', () => {
-    expect(user2.marsRemain()).toEqual("N/A")
-  })
+    expect(user2.marsRemain()).toEqual("N/A");
+  });
   test('should return remaining life expectancy for jupiter', () => {
-    expect(user.jupiterRemain()).toEqual(4.2)
+    expect(user.jupiterRemain()).toEqual(4.2);
   });
   test('should return N/A if jupiterAge is higher than jupiterExpect', () => {
-    expect(user2.jupiterRemain()).toEqual("N/A")
-  })
+    expect(user2.jupiterRemain()).toEqual("N/A");
+  });
+
+  test('should return N/A or years over life expectancy', () => {
+    expect(user.earthOver()).toEqual('N/A');
+    expect(user2.earthOver()).toEqual(27.4);
+  });
 });
