@@ -15,4 +15,7 @@ describe ('BaseLife', () => {
   test('should return life expectancy for venus', () => {
     expect(user.venusExpect).toEqual(117.09677419354838);
   });
+  test('should return life expectancy for mars', () => {
+    expect(user.marsExpect).toEqual(38.61702127659574);
+  });
 });
